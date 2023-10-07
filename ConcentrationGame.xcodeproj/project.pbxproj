@@ -7,13 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		81225A582ACEC7FE00CD0F15 /* Array+Identifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81225A572ACEC7FE00CD0F15 /* Array+Identifiable.swift */; };
+		81225A5C2AD1AC0700CD0F15 /* Pie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81225A5B2AD1AC0700CD0F15 /* Pie.swift */; };
+		81225A5E2AD1AF5400CD0F15 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81225A5D2AD1AF5400CD0F15 /* CardView.swift */; };
+		81225A602AD1BF4300CD0F15 /* Cardify.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81225A5F2AD1BF4300CD0F15 /* Cardify.swift */; };
 		817F6A312ACD10F7005A8506 /* ConcentrationGameApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817F6A302ACD10F7005A8506 /* ConcentrationGameApp.swift */; };
-		817F6A332ACD10F7005A8506 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817F6A322ACD10F7005A8506 /* ContentView.swift */; };
+		817F6A332ACD10F7005A8506 /* ConcentrationGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817F6A322ACD10F7005A8506 /* ConcentrationGameView.swift */; };
 		817F6A352ACD10F8005A8506 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 817F6A342ACD10F8005A8506 /* Assets.xcassets */; };
 		817F6A392ACD10F8005A8506 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 817F6A382ACD10F8005A8506 /* Preview Assets.xcassets */; };
 		817F6A432ACD10F8005A8506 /* ConcentrationGameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817F6A422ACD10F8005A8506 /* ConcentrationGameTests.swift */; };
 		817F6A4D2ACD10F8005A8506 /* ConcentrationGameUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817F6A4C2ACD10F8005A8506 /* ConcentrationGameUITests.swift */; };
 		817F6A4F2ACD10F8005A8506 /* ConcentrationGameUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817F6A4E2ACD10F8005A8506 /* ConcentrationGameUITestsLaunchTests.swift */; };
+		817F6A632ACE5A28005A8506 /* ConcentrationGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817F6A622ACE5A28005A8506 /* ConcentrationGame.swift */; };
+		817F6A652ACE5DA5005A8506 /* EmojiConcentrationGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817F6A642ACE5DA5005A8506 /* EmojiConcentrationGame.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +40,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		81225A572ACEC7FE00CD0F15 /* Array+Identifiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Identifiable.swift"; sourceTree = "<group>"; };
+		81225A5B2AD1AC0700CD0F15 /* Pie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pie.swift; sourceTree = "<group>"; };
+		81225A5D2AD1AF5400CD0F15 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		81225A5F2AD1BF4300CD0F15 /* Cardify.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cardify.swift; sourceTree = "<group>"; };
 		817F6A2D2ACD10F7005A8506 /* ConcentrationGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ConcentrationGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		817F6A302ACD10F7005A8506 /* ConcentrationGameApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcentrationGameApp.swift; sourceTree = "<group>"; };
-		817F6A322ACD10F7005A8506 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		817F6A322ACD10F7005A8506 /* ConcentrationGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcentrationGameView.swift; sourceTree = "<group>"; };
 		817F6A342ACD10F8005A8506 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		817F6A362ACD10F8005A8506 /* ConcentrationGame.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ConcentrationGame.entitlements; sourceTree = "<group>"; };
 		817F6A382ACD10F8005A8506 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -45,6 +55,8 @@
 		817F6A482ACD10F8005A8506 /* ConcentrationGameUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ConcentrationGameUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		817F6A4C2ACD10F8005A8506 /* ConcentrationGameUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcentrationGameUITests.swift; sourceTree = "<group>"; };
 		817F6A4E2ACD10F8005A8506 /* ConcentrationGameUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcentrationGameUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		817F6A622ACE5A28005A8506 /* ConcentrationGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcentrationGame.swift; sourceTree = "<group>"; };
+		817F6A642ACE5DA5005A8506 /* EmojiConcentrationGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiConcentrationGame.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +84,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		81225A562ACEC7EC00CD0F15 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				81225A572ACEC7FE00CD0F15 /* Array+Identifiable.swift */,
+			);
+			name = Utility;
+			sourceTree = "<group>";
+		};
 		817F6A242ACD10F7005A8506 = {
 			isa = PBXGroup;
 			children = (
@@ -95,8 +115,10 @@
 		817F6A2F2ACD10F7005A8506 /* ConcentrationGame */ = {
 			isa = PBXGroup;
 			children = (
-				817F6A302ACD10F7005A8506 /* ConcentrationGameApp.swift */,
-				817F6A322ACD10F7005A8506 /* ContentView.swift */,
+				81225A562ACEC7EC00CD0F15 /* Utility */,
+				817F6A612ACE5A08005A8506 /* Model */,
+				817F6A602ACE5A03005A8506 /* ViewModel */,
+				817F6A5F2ACE59FF005A8506 /* View */,
 				817F6A342ACD10F8005A8506 /* Assets.xcassets */,
 				817F6A362ACD10F8005A8506 /* ConcentrationGame.entitlements */,
 				817F6A372ACD10F8005A8506 /* Preview Content */,
@@ -127,6 +149,34 @@
 				817F6A4E2ACD10F8005A8506 /* ConcentrationGameUITestsLaunchTests.swift */,
 			);
 			path = ConcentrationGameUITests;
+			sourceTree = "<group>";
+		};
+		817F6A5F2ACE59FF005A8506 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				817F6A302ACD10F7005A8506 /* ConcentrationGameApp.swift */,
+				817F6A322ACD10F7005A8506 /* ConcentrationGameView.swift */,
+				81225A5B2AD1AC0700CD0F15 /* Pie.swift */,
+				81225A5D2AD1AF5400CD0F15 /* CardView.swift */,
+				81225A5F2AD1BF4300CD0F15 /* Cardify.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		817F6A602ACE5A03005A8506 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				817F6A642ACE5DA5005A8506 /* EmojiConcentrationGame.swift */,
+			);
+			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		817F6A612ACE5A08005A8506 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				817F6A622ACE5A28005A8506 /* ConcentrationGame.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,7 +309,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				817F6A332ACD10F7005A8506 /* ContentView.swift in Sources */,
+				81225A5E2AD1AF5400CD0F15 /* CardView.swift in Sources */,
+				81225A5C2AD1AC0700CD0F15 /* Pie.swift in Sources */,
+				81225A602AD1BF4300CD0F15 /* Cardify.swift in Sources */,
+				817F6A652ACE5DA5005A8506 /* EmojiConcentrationGame.swift in Sources */,
+				81225A582ACEC7FE00CD0F15 /* Array+Identifiable.swift in Sources */,
+				817F6A632ACE5A28005A8506 /* ConcentrationGame.swift in Sources */,
+				817F6A332ACD10F7005A8506 /* ConcentrationGameView.swift in Sources */,
 				817F6A312ACD10F7005A8506 /* ConcentrationGameApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
