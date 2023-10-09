@@ -53,7 +53,7 @@ struct ConcentrationGame<CardContent> where CardContent: Equatable {
     struct Card: Identifiable {
         fileprivate(set) var isFaceUp = false {
             didSet {
-                if oldValue {
+                if isFaceUp {
                     startUsingBonusTime()
                 } else {
                     stopUsingBonusTime()
