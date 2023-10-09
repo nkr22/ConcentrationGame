@@ -14,9 +14,9 @@ struct CardView: View {
 
     var body: some View{
         GeometryReader {geometry in
-            ZStack{
-                let animation = Animation.linear(duration: 0.5).repeatForever(autoreverses: false)
-                if !card.isMatched || card.isFaceUp {
+            if !card.isMatched || card.isFaceUp {
+                ZStack{
+                    let animation = Animation.linear(duration: 1.0).repeatForever(autoreverses: false)
                     Group {
                         if card.isConsumingBonusTime {
                             Pie(
@@ -38,18 +38,17 @@ struct CardView: View {
                             
                         }
                     }
-                        .opacity(0.4)
-                        .padding(geometry.size.width * Card.paddingScaleFactor)
+                    .opacity(0.4)
+                    .padding(geometry.size.width * Card.paddingScaleFactor)
                     Text(card.content)
                         .font(systemFont(for: geometry.size))
                         .rotationEffect(Angle(degrees: card.isMatched ? 360 : 0))
                         .animation(animation, value: card.isMatched)
-                } else {
-                    RoundedRectangle(cornerRadius: Card.cornerRadius)
-                }
+                } 
+                .cardify(isFaceUp: card.isFaceUp)
+                .transition(.scale)
+                .foregroundStyle(.blue)
             }
-            .cardify(isFaceUp: card.isFaceUp)
-            .foregroundStyle(.blue)
         }
         .aspectRatio(Card.aspectRatio, contentMode: .fit)
     }
@@ -65,7 +64,7 @@ struct CardView: View {
     
     // MARK: - Drawing Constants
     private struct Card {
-        static let aspectRatio: Double = 2/3
+        static let aspectRatio: Double = 5.0/7.0
         static let cornerRadius: Double = 10
         static let fontScaleFactor = 0.75
         static let paddingScaleFactor = 0.04

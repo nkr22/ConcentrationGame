@@ -9,12 +9,14 @@ import SwiftUI
 
 struct ConcentrationGameView: View {
     let emojiGame: EmojiConcentrationGame
+    
     var body: some View {
         GeometryReader { geometry in
             VStack {
                 LazyVGrid(columns: columns(for: geometry.size)) {
-                    ForEach(emojiGame.cards) { card in
+                    ForEach(emojiGame.dealtCards) { card in
                         CardView(card: card)
+                            .transition(AnyTransition.offset(randomOffscreenLocation))
                             .onTapGesture{
                                 emojiGame.choose(card)
                             }
@@ -32,6 +34,16 @@ struct ConcentrationGameView: View {
             }
             .padding()
         }
+        .onAppear {
+            emojiGame.dealCards()
+        }
+    }
+    
+    private var randomOffscreenLocation: CGSize {
+        let radius = max(UIScreen.main.bounds.width, UIScreen.main.bounds.height) * 1.5
+        let factor: Double = Int.random(in: 0...1) > 0 ? 1 : -1
+        
+        return CGSize(width: factor * radius, height: factor * radius)
     }
     
     //MARK: - Drawing Constants
